@@ -2,7 +2,6 @@
 
 const express = require(`express`);
 const path = require(`path`);
-
 const offersRoutes = require(`./routes/offers-routes`);
 const myRoutes = require(`./routes/my-routes`);
 const mainRoutes = require(`./routes/main-routes`);
@@ -27,3 +26,4 @@ app.set(`view engine`, `pug`);
 
 
 app.listen(DEFAULT_PORT);
+

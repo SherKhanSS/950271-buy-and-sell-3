@@ -9,4 +9,3 @@ mainRouter.get(`/login`, (req, res) => res.render(`login`));
 mainRouter.get(`/search`, (req, res) => res.render(`search-result`));
 
 module.exports = mainRouter;
-

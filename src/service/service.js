@@ -16,4 +16,3 @@ if (userArguments.length === 0 || !Cli[userCommand]) {
 }
 
 Cli[userCommand].run(userArguments.slice(1));
-
