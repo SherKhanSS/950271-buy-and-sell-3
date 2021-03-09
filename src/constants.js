@@ -1,15 +1,16 @@
 'use strict';
 
-module.exports.DEFAULT_COMMAND = `--help`;
+const MAX_ID_LENGTH = 6;
+const USER_ARGV_INDEX = 2;
+const DEFAULT_COMMAND = `--help`;
+const API_PREFIX = `/api`;
 
-module.exports.USER_ARGV_INDEX = 2;
-
-module.exports.ExitCode = {
+const ExitCode = {
   error: 1,
   success: 0,
 };
 
-module.exports.HttpCode = {
+const HttpCode = {
   OK: 200,
   CREATED: 201,
   NOT_FOUND: 404,
@@ -19,6 +20,11 @@ module.exports.HttpCode = {
   BAD_REQUEST: 400,
 };
 
-module.exports.API_PREFIX = `/api`;
-
-module.exports.MAX_ID_LENGTH = 6;
+module.exports = {
+  MAX_ID_LENGTH,
+  DEFAULT_COMMAND,
+  USER_ARGV_INDEX,
+  API_PREFIX,
+  ExitCode,
+  HttpCode,
+};
